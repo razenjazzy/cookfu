@@ -100,6 +100,7 @@ class MenuItemController extends Controller
     public function update(ApiMenuItemUpdateRequest $request, MenuItem $menuItem)
     {
         $menuItem->fill($request->all());
+        $menuItem->status = 'pending';
         $menuItem->save();
 
         /* handle item choices */
