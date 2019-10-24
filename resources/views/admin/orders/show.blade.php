@@ -168,14 +168,14 @@
             marker = new google.maps.Marker({
                 map: map,
                 position: storeLatLng,
-                icon: 'http://localhost/chefqu/public/assets/store.png'
+                icon: 'http://localhost/cookfu/public/assets/store.png'
             });
 
             if(deliveryLatLng != null) {
                 deiveryMarker = new google.maps.Marker({
                     map: map,
                     position: deliveryLatLng,
-                    icon: 'http://localhost/chefqu/public/assets/bike.png'
+                    icon: 'http://localhost/cookfu/public/assets/bike.png'
                 });
             }
         }

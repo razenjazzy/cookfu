@@ -43,7 +43,7 @@ return [
 
         'beanstalkd' => [
             'driver' => 'beanstalkd',
-            'host' => 'localhost',
+            'host' => 'localhost/cookfu',
             'queue' => 'default',
             'retry_after' => 90,
         ],
