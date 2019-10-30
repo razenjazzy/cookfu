@@ -17,6 +17,7 @@ class CreateAddressesTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('address');
+            $table->string('area');
             $table->decimal('longitude', 15, 7)->default(0.0);
             $table->decimal('latitude', 15, 7)->default(0.0);
             $table->integer('user_id')->unsigned();

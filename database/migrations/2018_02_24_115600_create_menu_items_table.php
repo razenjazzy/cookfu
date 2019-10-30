@@ -20,7 +20,7 @@ class CreateMenuItemsTable extends Migration
             $table->string('specification');
             $table->string('image_url', 500);
             $table->double('price', 8,2);
-            $table->integer('quantity');
+            $table->integer('quantity')->default(0);
             $table->boolean('is_available')->default(true);
             $table->boolean('is_non_veg');
             $table->enum('status', ['pending', 'rejected', 'approved'])->default('approved');
